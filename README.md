@@ -52,6 +52,7 @@ rollcage-guard install
 
 ```bash
 brew tap nmaties/rollcage-guard https://github.com/nmaties/rollcage-guard
+brew trust nmaties/rollcage-guard   # Homebrew 7 and later asks before installing from third-party taps
 brew install rollcage-guard
 rollcage-guard install
 ```

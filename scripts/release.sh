@@ -41,8 +41,7 @@ echo "Built $TARBALL ($SHA)"
 if [[ "${1:-}" == "--publish" ]]; then
   REPO=$(gh repo view --json nameWithOwner -q .nameWithOwner)
   URL="https://github.com/$REPO/releases/download/v$VERSION/rollcage-guard-macos.tar.gz"
-  sed -i '' -e "s|^  url \".*\"|  url \"$URL\"|" -e "s|^  sha256 \".*\"|  sha256 \"$SHA\"|" \
-      -e "s|^  version \".*\"|  version \"$VERSION\"|" Formula/rollcage-guard.rb
+  sed -i '' -e "s|^  url \".*\"|  url \"$URL\"|" -e "s|^  sha256 \".*\"|  sha256 \"$SHA\"|" Formula/rollcage-guard.rb
   git add Formula/rollcage-guard.rb
   git diff --cached --quiet || git commit -m "Formula: rollcage-guard $VERSION"
   git push
