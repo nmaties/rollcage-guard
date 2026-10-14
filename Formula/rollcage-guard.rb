@@ -3,7 +3,7 @@ class RollcageGuard < Formula
   homepage "https://github.com/nmaties/rollcage-guard"
   url "https://github.com/nmaties/rollcage-guard/releases/download/v1.0.0/rollcage-guard-macos.tar.gz"
   version "1.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "fbe3d61165e867c527e829baa8e5b8de4417ea119b9759d60ad04bc44dc0ad68"
   license "MIT"
 
   depends_on :macos
