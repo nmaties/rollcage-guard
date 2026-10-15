@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Claude Code plugin (`/plugin install rollcage --marketplace nmaties/rollcage-guard`) that adds the Rollcage MCP server at https://rollcage.app/mcp.
+
 ## 1.0.0
 
 First open-source release of the guard from [Rollcage](https://rollcage.app) 1.0.2, as a standalone CLI.

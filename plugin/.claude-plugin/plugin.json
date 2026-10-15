@@ -1,0 +1,14 @@
+{
+  "name": "rollcage",
+  "description": "Rollcage's free MCP server: check shell commands, files and URLs against the Rollcage Guard's rules before running them. No sign-in.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rollcage",
+    "email": "contact@rollcage.app",
+    "url": "https://rollcage.app"
+  },
+  "homepage": "https://rollcage.app/mcp",
+  "repository": "https://github.com/nmaties/rollcage-guard",
+  "license": "MIT",
+  "keywords": ["security", "secrets", "guard", "hooks", "mcp"]
+}

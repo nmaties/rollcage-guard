@@ -124,6 +124,18 @@ The hook reads the file on every call, so changes apply straight away. New built
 - **It matches patterns.** It catches the ways agents actually reach for secrets and run destructive commands, not every possible disguise. If you find a bypass, please [report it](SECURITY.md).
 - **It only covers agents with hooks**: Claude Code, Codex CLI, Cursor and Gemini CLI. Aider, Goose and others have no pre-tool-use hook to plug into.
 
+## MCP server for Claude
+
+The same rules run as a free, public MCP server at `https://rollcage.app/mcp` (no sign-in). Claude, Claude Code, Cursor, Codex CLI and Gemini CLI can ask it about a command, file or URL before acting: `check_command`, `check_file`, `check_url`, `list_rules` and `install_guard`, plus Rollcage's docs. It advises; the hook above enforces.
+
+In Claude Code, install it as a plugin from this repository:
+
+```text
+/plugin install rollcage --marketplace nmaties/rollcage-guard
+```
+
+or add the server directly with `claude mcp add --transport http --scope user rollcage https://rollcage.app/mcp`. In Claude on the web or desktop: Settings → Connectors → Add custom connector, with that URL. More at [rollcage.app/mcp](https://rollcage.app/mcp).
+
 ## Rollcage for Mac
 
 Rollcage Guard is the open-source core of **[Rollcage](https://rollcage.app/?utm_source=github&utm_medium=readme&utm_campaign=rollcage-guard)**, a Mac menu-bar app for what a hook can't do:

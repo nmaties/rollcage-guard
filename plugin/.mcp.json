@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rollcage": {
+      "type": "http",
+      "url": "https://rollcage.app/mcp"
+    }
+  }
+}

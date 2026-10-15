@@ -1,0 +1,20 @@
+{
+  "name": "rollcage",
+  "owner": {
+    "name": "Rollcage",
+    "email": "contact@rollcage.app"
+  },
+  "metadata": {
+    "description": "Rollcage plugins for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "rollcage",
+      "source": "./plugin",
+      "description": "Rollcage's free MCP server: check shell commands, files and URLs against the Rollcage Guard's rules before running them.",
+      "version": "1.0.0",
+      "category": "security",
+      "homepage": "https://rollcage.app/mcp"
+    }
+  ]
+}
